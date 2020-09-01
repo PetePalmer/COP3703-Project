@@ -1,0 +1,19 @@
+CREATE DATABASE dbtest;
+USE dbtest;
+CREATE TABLE students (
+    Nnumber int,
+    FirstName varchar(255),
+    LastName varchar(255),
+    Major varchar(255)
+);
+
+INSERT INTO students (Nnumber, FirstName, LastName, Major)
+VALUES (1000001, 'John', 'Doe', 'Computer Science'); 
+
+INSERT INTO students (Nnumber, FirstName, LastName, Major)
+VALUES (1000002, 'Jane', 'Doe', 'Information Science'); 
+
+INSERT INTO students (Nnumber, FirstName, LastName, Major)
+VALUES (1000003, 'Thomas', 'Carpenter', 'Information Technology'); 
+
+SELECT * FROM students;
