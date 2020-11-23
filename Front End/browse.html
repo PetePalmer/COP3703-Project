@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>UNFMovies | Search Movies</title>
+		<link href="./css/main.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="./js/script.js"></script>
+		<script type="text/javascript">
+			function resultsEmpty() {
+				var results = document.getElementById("hidden");
+				if (results.style.display === "none") {          
+        		results.style.display = "block";
+    			} 
+    			
+			} 
+		</script>
+	</head>
+	<body>
+		<div id="logo">
+		<img src="./images/logo.png"/>
+		</div>
+		<div>
+		<form name="searchForm" onsubmit="return moviesList()">
+			<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Genres
+      <i class="fa fa-angle-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Action</a>
+      <a href="#">Adventure</a>
+      <a href="#">Animation</a>
+      <a href="#">Comedy</a>
+      <a href="#">Crime</a>
+      <a href="#">Drama</a>
+      <a href="#">Fantasy</a>
+      <a href="#">Fiction</a>
+      <a href="#">Horror</a>
+      <a href="#">Mystery</a>
+      <a href="#">Romance</a>
+      <a href="#">Science Fiction</a>
+      <a href="#">Sports</a>
+      <a href="#">Western</a> 
+    </div>
+  </div>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Directors
+      <i class="fa fa-angle-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Brad Bird</a>
+      <a href="#">Christopher Nolan</a>
+      <a href="#">Chris Anderson</a>
+      <a href="#">Conrad Vernon</a>
+      <a href="#">Dexter Fletcher</a>
+      <a href="#">Edward Decter</a>
+      <a href="#">Gore Verbinski</a>
+      <a href="#">Hal Needham</a>
+      <a href="#">Hebert Ross</a>
+      <a href="#">John Hyams</a>
+      <a href="#">Joss Whedon</a>
+      <a href="#">Paul Anderson</a>
+      <a href="#">Salim Akil</a>
+      <a href="#">Tom McGrath</a> 
+    </div>
+  </div>
+  <div class="searchbarb">
+				<input type="text" placeholder="search movies.."/>
+				<button onclick="resultsEmpty()" type="submit"><img src="./images/mag-glass.png"/></button>
+			</div>
+</div>
+			
+			<div id="shown">
+			<div id="movielist">
+			
+			</div>
+			<div id="browselist">
+			
+			
+			</div>
+			</div>
+			
+			
+		</form>
+		
+		</div>
+		<div id="bgbox">
+			
+			</div>
+	<div>
+		<nav>
+			<a href="index.html" target="_self"><button type="button">Home Screen</button></a>
+		</nav>
+	</div>	
+		
+	</body>
+</html>

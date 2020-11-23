@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>UNFMovies | Search Movies</title>
+		<link href="./css/main.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="./js/script.js"></script>
+		<script type="text/javascript">
+			function resultsEmpty() {
+				var results = document.getElementById("hidden");
+				if (results.style.display === "none") {          
+        		results.style.display = "block";
+    			} 
+    			
+			} 
+		</script>
+	</head>
+	<body>
+		<div id="logo">
+		<img src="./images/logo.png"/>
+		</div>
+		<div>
+		<form name="searchForm" onsubmit="return moviesList()">
+		
+			
+			<div id="shown">
+			<div id="movielist">
+			
+			</div>
+			<div id="browselist">
+			
+			
+			</div>
+			</div>
+			
+			
+		</form>
+		
+		</div>
+		<div id="bgbox">
+			
+			</div>
+	<div>
+		<nav>
+			<a href="index.html" target="_self"><button type="button">Home Screen</button></a>
+		</nav>
+	</div>	
+		
+	</body>
+</html>
