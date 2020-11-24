@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>UNFMovies | Search Movies</title>
+		<link href="./css/main.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="./js/script.js"></script>
+		<script type="text/javascript">
+			function resultsEmpty() {
+				var results = document.getElementById("hidden");
+				if (results.style.display === "none") {          
+        		results.style.display = "block";
+    			} 
+    			
+			} 
+			function reviewAlert() {
+    			alert ("Thank you! Your review has been submitted.");
+  			}
+		</script>
+	</head>
+	<body>
+		<div id="logo">
+		<img src="./images/logo.png"/>
+		</div>
+		<div>
+		<form name="reviewForm" onsubmit="return moviesList()">
+		
+			
+			<div id="shown">
+			<div id="resultsbox">
+			
+			<table style="width: 100%">
+				
+				<tr>
+					
+					<td><img id="poster" src="./images/NewGuyPoster.jpg"/></td>
+					<td>
+					<textarea name="reviewInput" rows="10" cols="65"></textarea>
+					<div id="rating">
+			<input type="radio" name="rating" id="rate10"/><label for="rate10">10</label>
+			<input type="radio" name="rating" id="rate9"/><label for="rate9">9</label>
+			<input type="radio" name="rating" id="rate8"/><label for="rate8">8</label>
+			<input type="radio" name="rating" id="rate7"/><label for="rate7">7</label>
+			<input type="radio" name="rating" id="rate6"/><label for="rate6">6</label>
+			<input type="radio" name="rating" id="rate5"/><label for="rate5">5</label>
+			<input type="radio" name="rating" id="rate4"/><label for="rate4">4</label>
+			<input type="radio" name="rating" id="rate3"/><label for="rate3">3</label>
+			<input type="radio" name="rating" id="rate2"/><label for="rate2">2</label>
+			<input type="radio" name="rating" id="rate1"/><label for="rate1">1</label>
+			</div>
+			<br />
+			<button onclick="reviewAlert()" type="submit">Submit</button>
+			</td>
+					
+				</tr>
+				
+			</table>
+			
+			</div>
+			</div>
+			
+			
+		</form>
+		
+		</div>
+		<div id="bgbox">
+			
+			</div>
+	<div>
+		<nav>
+			<a href="index.html" target="_self"><button type="button">Home Screen</button></a>
+		</nav>
+	</div>	
+		
+	</body>
+</html>
