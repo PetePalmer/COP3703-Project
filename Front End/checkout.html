@@ -21,15 +21,35 @@
 		<img src="./images/logo.png"/>
 		</div>
 		<div>
-		<form name="searchForm" onsubmit="return moviesList()">
+		<form name="checkoutForm" onsubmit="return checkout()">
 		
 			
 			<div id="shown">
-			<div id="movielist">
 			
-			</div>
-			<div id="browselist">
+			<div>
 			
+			<table style="width: 100%">
+				<tr>
+					<th>Movie</th>
+					<th>Description</th>
+					<th>Options</th>
+					<th></th>
+					<th></th>
+					<th>Cart</th>
+					<th></th>
+					<th></th>
+				</tr>
+				
+				<tr>
+					
+					<td><img id="poster" src="./images/NewGuyPoster.jpg"/></td>
+					<td><p>The film tells the story of high school loser Dizzy Harrison (Qualls) who gets himself expelled so that he can move schools and reinvent himself.</p></td>
+					<td colspan="4"><button type="button">Rent for $3.00</button><button type="button">Buy for $4.99</button></td>
+					<td colspan="3"><textarea name="cartInput" rows="20" cols="20" readonly=""></textarea><button type="button">Confirm</button></td>
+					
+				</tr>
+				
+			</table>
 			
 			</div>
 			</div>
