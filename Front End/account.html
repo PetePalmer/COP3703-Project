@@ -23,13 +23,71 @@
 		<div>
 		<form name="searchForm" onsubmit="return moviesList()">
 		
-			
-			<div id="shown">
-			<div id="movielist">
-			
+		<div id="titleleft">
+			<h3>Account Balance</h3>
 			</div>
-			<div id="browselist">
 			
+			<div id="titleright">
+			<h3>Rented Copies</h3>
+			</div>
+			
+			<div id="floatLeft">
+			<div>
+				<table style="width:100%">
+					<tr>
+						<td>Username:</td>
+						<td><input type="text" id="userName" name="userName" value="peter" readonly=""/></td>
+					</tr>
+					<tr>
+						<td>Outstanding Fees:</td>
+						<td><input type="text" id="outstandingFees" name="outstandingFees" value="$3.00" readonly=""/></td>
+					</tr>
+					<tr>
+						<td>Store Credit:</td>
+						<td><input type="text" id="storeCredit" name="storeCredit" value="$0.00" readonly=""/></td>
+					</tr>
+					<tr>
+						<td>Discount</td>
+						<td><input type="text" id="discount" name="discount" value="No" readonly=""/></td>
+					</tr>
+					<tr>
+						<td>Late Fees:</td>
+						<td><input type="text" id="lateFees" name="lateFees" value="$0.00" readonly=""/></td>
+					</tr>
+					<tr>
+						<td>Total Due:</td>
+						<td><input type="text" id="totalDue" name="totalDue" value="$3.00" readonly=""/></td>
+					</tr>
+				</table>
+			</div>
+			</div>
+			
+			
+			<div id="floatRight">
+			<div>
+				<table style="width:100%">
+					<tr>
+						<td><input type="text" id="rentedCopy1" name="rentedCopy1" value="002 - The New Guy" readonly=""/></td>
+						<td><button type="submit" id="returnrentedCopy1">Return</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" id="rentedCopy2" name="rentedCopy1" value="" readonly=""/></td>
+						<td><button type="submit" id="returnrentedCopy2">Return</button></td>
+					</tr>
+				</table>
+			</div>
+		
+			</div>
+			<div id="shown">
+			<br />
+			<div id="resultsbox">
+			<table style="width:100%">
+				<tr>
+					<td>MAKE PAYMENT:</td>
+					<td><input type="text" id="invoicePayment" name="invoicePayment" placeholder="$Enter amount..."/></td>
+					<td><button type="submit" id="invoicePayment">Pay Now</button></td>
+				</tr>
+			</table>
 			
 			</div>
 			</div>
@@ -38,9 +96,6 @@
 		</form>
 		
 		</div>
-		<div id="bgbox">
-			
-			</div>
 	<div>
 		<nav>
 			<a href="index.html" target="_self"><button type="button">Home Screen</button></a>
