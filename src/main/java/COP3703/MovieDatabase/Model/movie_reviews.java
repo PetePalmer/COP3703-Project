@@ -16,10 +16,10 @@ public class movie_reviews {
 	private Integer ReviewID;
 
 	@Column(name = "MovieName")
-	private String MovieName;
+	private String movieName;
 
 	@Column(name = "Username")
-	private String Username;
+	private String userName;
 
 	@Column(name = "Rating")
 	private Integer Rating;
@@ -30,13 +30,20 @@ public class movie_reviews {
 	public movie_reviews() {
 		
 	}
+//	public movie_reviews(String movieName, String userName, Integer rating, String review) {
+//		this.ReviewID = 1;
+//		this.MovieName = movieName;
+//		this.Username = userName;
+//		this.Rating = rating;
+//		this.Review = review;
+//	}
 	
-	public movie_reviews(movie_reviews newReview) {
-		this.MovieName = newReview.getMovieName();
-		this.Username = newReview.getUsername();
-		this.Rating = newReview.getRating();
-		this.Review = newReview.getReview();
-	}
+//	public movie_reviews(movie_reviews newReview) {
+//		this.MovieName = newReview.getMovieName();
+//		this.Username = newReview.getUsername();
+//		this.Rating = newReview.getRating();
+//		this.Review = newReview.getReview();
+//	}
 
 	public Integer getReviewID() {
 		return ReviewID;
@@ -47,19 +54,19 @@ public class movie_reviews {
 	}
 
 	public String getMovieName() {
-		return MovieName;
+		return movieName;
 	}
 
 	public void setMovieName(String MovieName) {
-		MovieName = MovieName;
+		movieName = MovieName;
 	}
 
 	public String getUsername() {
-		return Username;
+		return userName;
 	}
 
 	public void setUsername(String username) {
-		Username = username;
+		this.userName = username;
 	}
 
 	public int getRating() {

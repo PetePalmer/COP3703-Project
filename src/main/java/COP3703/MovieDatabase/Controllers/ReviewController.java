@@ -23,7 +23,7 @@ public class ReviewController {
 	@PostMapping("/")
 	public ResponseEntity<Object> createNewReview(@RequestBody movie_reviews movieReview) {
 		try {
-			movie_reviews newReview = reviewRepo.save(new movie_reviews(movieReview));
+			movie_reviews newReview = reviewRepo.save(movieReview);
 			return new ResponseEntity<>(newReview, HttpStatus.CREATED);
 
 		} catch (Exception e) {

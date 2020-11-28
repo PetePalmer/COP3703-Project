@@ -49,17 +49,6 @@ public class rental_and_purchase_orders {
 		
 	}
 
-	public rental_and_purchase_orders(rental_and_purchase_orders transaction, boolean newRelease) {
-		this.userName = transaction.getUserName();
-		this.RentedOrPurchased = transaction.getRentedOrPurchased();
-		this.movieName = transaction.getMovieName();
-		this.OrderDate = transaction.getOrderDate();
-		this.TransactionTotal = transaction.getTransactionTotal();
-		this.CheckOutDate = transaction.getCheckOutDate();
-		this.ReturnDate = transaction.getReturnDate();
-		this.ExpectedReturnDate = this.calculateReturnDate(newRelease);
-	}
-
 	private Date calculateReturnDate(boolean newRelease) {
 		int numOfDays = 0;
 		if (newRelease) {
@@ -87,7 +76,7 @@ public class rental_and_purchase_orders {
 	}
 
 	public void setUserName(String userName) {
-		userName = userName;
+		this.userName = userName;
 	}
 
 	public String getMovieName() {

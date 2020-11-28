@@ -73,12 +73,7 @@ public class TransactionController {
 				return new ResponseEntity<>("Customer has met max rental count", HttpStatus.CONFLICT);
 			} else {
 				rental_and_purchase_orders newTransaction = transactionRepo
-						.save(new rental_and_purchase_orders(transaction, this.newRelease(transaction.getMovieName())));
-
-				movies updateMovie = movieRepo.findByMovieName(transaction.getMovieName());
-				updateMovie.setCopiesCurrentlyRented(updateMovie.getCopiesCurrentlyRented() + 1);
-				updateMovie.setNumberOfCopies(updateMovie.getNumberOfCopies() - 1);
-				movieRepo.save(updateMovie);
+						.save(transaction);
 				
 				return new ResponseEntity<>(newTransaction, HttpStatus.CREATED);
 			}
