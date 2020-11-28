@@ -5,51 +5,32 @@
 		<title>UNFMovies | Search Movies</title>
 		<link href="./css/main.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script type="text/javascript" src="./js/script.js"></script>
-		<script type="text/javascript">
-			function resultsEmpty() {
-				var results = document.getElementById("hidden");
-				if (results.style.display === "none") {          
-        		results.style.display = "block";
-    			} 
-    			
-			} 
-		</script>
+		<script type="text/javascript" src="./js/scripts.js"></script>
+
 	</head>
 	<body>
 		<div id="logo">
 		<img src="./images/logo.png"/>
 		</div>
 		<div>
-		<form name="checkoutForm" onsubmit="return checkout()">
-		
-			
-			<div id="shown">
-			
-			<div>
-			
-			<table style="width: 100%">
-				<tr>
-					<th>Movie</th>
-					<th>Description</th>
-					<th>Options</th>
-					<th></th>
-					<th></th>
-					<th>Cart</th>
-					<th></th>
-					<th></th>
-				</tr>
-				
-				<tr>
-					
-					<td><img id="poster" src="./images/NewGuyPoster.jpg"/></td>
-					<td><p>The film tells the story of high school loser Dizzy Harrison (Qualls) who gets himself expelled so that he can move schools and reinvent himself.</p></td>
-					<td colspan="4"><button type="button">Rent for $3.00</button><button type="button">Buy for $4.99</button></td>
-					<td colspan="3"><textarea name="cartInput" rows="20" cols="20" readonly=""></textarea><button type="button">Confirm</button></td>
-					
-				</tr>
-				
-			</table>
+		<form name="checkoutForm" onsubmit="return checkOut()">
+			<div class="row">
+				<div class="col-75">
+				  <div class="container">
+					<form action="/action_page.php">
+			  
+					  <div class="row">
+						<div class="col-50">
+						  <h3>Checkout</h3>
+						  <label for="UserName">UserName:</label>
+						  <input type="text" id="userName" name="UserName"><br><br>
+						  <label for="movieName">MovieName:</label>
+						  <input type="text" id="movieName" name="movieName"><br><br>
+						  <label for="rentpurchase">Rented(R) or Purchased(P):</label> 
+						  <input type="text" id="rentpurchase" name="rentpurchase"><br><br>
+						  <div>
+			  <button>Submit</button>
+						</div>
 			
 			</div>
 			</div>

@@ -5,15 +5,8 @@
 		<title>UNFMovies | Search Movies</title>
 		<link href="./css/main.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script type="text/javascript" src="./js/script.js"></script>
+		<script type="text/javascript" src="./js/scripts.js"></script>
 		<script type="text/javascript">
-			function resultsEmpty() {
-				var results = document.getElementById("hidden");
-				if (results.style.display === "none") {          
-        		results.style.display = "block";
-    			} 
-    			
-			} 
 			function reviewAlert() {
     			alert ("Thank you! Your review has been submitted.");
   			}
@@ -24,7 +17,7 @@
 		<img src="./images/logo.png"/>
 		</div>
 		<div>
-		<form name="reviewForm" onsubmit="return moviesList()">
+		<form name="reviewForm" onsubmit="return submitReview()">
 		
 			
 			<div id="shown">
@@ -33,10 +26,12 @@
 			<table style="width: 100%">
 				
 				<tr>
+					<label for="userName">UserName:</label><br>
+					<input type="text" id="userName" name="userName"><br>
+					<label for="movieName">MovieName:</label><br>
+					<input type="text" id="movieName" name="movieName"><br><br>
+					<textarea id="review" name="reviewInput" rows="10" cols="65"></textarea>
 					
-					<td><img id="poster" src="./images/NewGuyPoster.jpg"/></td>
-					<td>
-					<textarea name="reviewInput" rows="10" cols="65"></textarea>
 					<div id="rating">
 			<input type="radio" name="rating" id="rate10"/><label for="rate10">10</label>
 			<input type="radio" name="rating" id="rate9"/><label for="rate9">9</label>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>UNFMovies | Search Customer Balance</title>
+		<link href="./css/main.css" rel="stylesheet"/>
+		<script type="text/javascript" src="./js/scripts.js"></script>
+	</head>
+	<body>
+		<div id="logo">
+		<img src="./images/logo.png"/>
+		</div>
+		<div>
+			<div class="searchbar">
+				<input id="search" type="text" placeholder="Search UserName"/>
+				<button onclick="getBalanceList()" type="submit"><img src="./images/mag-glass.png"/></button>
+			</div>
+			<div id="shown">
+			<div id="resultsbox">
+			<table id="balanceTable">
+
+			</table>
+			</div>
+			</div>
+
+			<button onclick="payBalance()" type="submit" type="button">Pay Balance</button>
+		
+		</div>
+	<div>
+		<nav>
+			<a href="index.html" target="_self"><button type="button">Home Screen</button></a>
+		</nav>
+	</div>	
+		
+	</body>
+</html>
