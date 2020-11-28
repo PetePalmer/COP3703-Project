@@ -1,0 +1,292 @@
+/*--------------HOMEPAGE STUFF-----------------*/
+h3 {
+	color: #fff;
+	padding-left: 10px;
+}
+#titleleft {
+	float: left;
+	width: 365px;
+	background-color: #232f3e;
+	margin-bottom: 2px;
+	border-radius: 3px 3px 0px 0px;
+}
+#titleright {
+	float: right;
+	width: 358px;
+	background-color: #232f3e;
+	margin-bottom: 2px;
+	margin-left: -20px;
+	border-radius: 3px 3px 0px 0px;
+}
+#floatLeft {
+	float: left;
+	border-radius: 0px 0px 3px 3px;
+	background-color: #fff;
+	padding: 10px;
+	width: 46%;
+}
+#floatRight {
+	float: right;
+	border-radius: 0px 0px 3px 3px;
+	background-color: #fff;
+	padding: 10px 10px 45px 10px;
+	width: 45%;
+}
+body {
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+	padding: 90px;
+	margin: auto;
+	width: 750px;
+	/* background-color: #131a22; */
+}
+#logo {
+	padding-bottom: 50px;
+	margin-left: 230px;
+}
+
+
+/*--------LARGE SEARCH BAR------*/
+.searchbar input[type=text] {
+	float: left;
+	width: 90%;
+	padding: 7px 10px 10px 0;
+	border-radius: 3px 0px 0px 3px;
+	background-color: #DDDFDD;
+	border: 1px #dddfdd solid;
+	line-height: 15px;
+	height: 38px;
+	font-size: 15px;
+	box-shadow: none;
+	text-indent: 8px;
+	outline: 0;
+}
+.searchbar button {
+	float: right;
+	line-height: 15px;
+	height: 57px;
+	outline:0;
+	border: 1px #febd69 solid;
+	border-radius: 0px 3px 3px 0px;
+	background-color: #febd69;
+	padding-top: 5px;
+	margin-left: -20px;
+	width: 10%;
+}
+.searchbar button:hover {
+	float: right;
+	line-height: 15px;
+	height: 57px;
+	border-radius: 0px 3px 3px 0px;
+	border: 1px #fead41 solid;
+	background-color: #fead41;
+	padding-top: 5px;
+	margin-left: -20px;
+	width: 10%;
+}
+
+/*--------------NAVBARS-----------------*/
+.navbar {
+  	overflow: hidden;
+  	background-color: #232f3e;
+}
+.navbar a {
+  	float: left;
+  	padding: 14px 16px;
+  	text-decoration: none;
+}
+.dropdown {
+  	float: left;
+  	overflow: hidden;
+}
+.dropdown .dropbtn {
+  	border: none;
+ 	outline: none;
+  	color: white;
+  	padding: 14px 16px;
+  	background-color: inherit;
+  	font-family: inherit;
+  	margin: 0; 
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  	color: #7a8585;
+}
+.dropdown-content {
+  	display: none;
+  	position: absolute;
+  	background-color: #f9f9f9;
+  	min-width: 160px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
+}
+.dropdown-content a {
+  	float: none;
+  	color: black;
+  	padding: 12px 16px;
+  	text-decoration: none;
+  	display: block;
+  	text-align: left;
+}
+.dropdown-content a:hover {
+  	background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  	display: block;
+}
+.searchbarb input[type=text] {
+	float: left;
+	margin-left: 106px;
+	margin-top: 12px;
+	width: 42%;
+	padding: 7px 10px 10px 0;
+	border-radius: 3px 0px 0px 3px;
+	background-color: #DDDFDD;
+	border: 1px #DDDFDD solid;
+	line-height: 15px;
+	height: 15px;
+	font-size: 15px;
+	box-shadow: none;
+	text-indent: 8px;
+	outline: 0;
+}
+.searchbarb button {
+	float: right;
+	line-height: 15px;
+	height: 34px;
+	outline:0;
+	border-radius: 0px 3px 3px 0px;
+	border: 1px #febd69 solid;
+	background-color: #febd69;
+	padding-top: 5px;
+	margin-top: 12px;
+	margin-right: 28px;
+	width: 10%;
+}
+.searchbarb button:hover {
+	float: right;
+	line-height: 15px;
+	height: 34px;
+	border-radius: 0px 3px 3px 0px;
+	border: 1px #fead41 solid;
+	background-color: #fead41;
+	padding-top: 5px;
+	margin-top: 12px;
+	margin-right: 28px;
+	width: 10%;
+	z-index: 2;
+}
+
+
+/*------ to hide/show results after input -----------*/
+#hidden {
+	display: none;
+}
+#shown {
+	display: block;
+}
+#movielist {
+	clear: both;
+	border-radius: 3px;
+	background-color: #fff;
+	padding: 10px;
+	margin-top: 50px;
+}
+#browselist {
+	clear: both;
+	border-radius: 3px;
+	background-color: #fff;
+	padding: 10px;
+	margin-top: 50px;
+}
+
+
+
+
+
+/*--------------ELEMENTS-----------------*/
+h1 {
+}
+h2 {
+}
+h4 {
+	color: #131a22;
+	padding: 2px;
+}
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+p {
+	
+}
+p a:hover {
+
+}
+::selection {
+
+}
+button {
+	border-color: #a88734 #9c7e31 #846a29;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	color: #73560b;
+	background-color: #f0c14b;
+	outline: 0;
+	line-height: 29px;
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+	padding: 0px 10px 0px 11px;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+button:hover {
+	border-color: #a88734 #9c7e31 #846a29;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	background-color: #cc9911;
+	outline: 0;
+	line-height: 29px;
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+	padding: 0px 10px 0px 11px;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+input[type=text],input[type=month],input[type=number],select {
+	
+}
+textarea {
+	background-color: #f2f2f2;
+	margin-bottom: 10px;
+}
+input[type=submit],input[type=reset] {
+}
+input[type=image] {
+}
+
+/*--------------NAVBBUTTON-----------------*/
+nav {
+	margin-top: 50px;
+}
+
+nav button {
+	background-color: #37475a;
+	border-color: #37475a;
+	color: #f9fafb;
+	margin-top: 90px;
+}
+nav button:hover {
+	background-color: #232f3e;
+	border-color: #232f3e;
+	color: #f9fafb;
+}

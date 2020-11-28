@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>UNFMovies | Search Movies</title>
+		<link href="./css/main.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="./js/script.js"></script>
+		<script type="text/javascript">
+			function resultsEmpty() {
+				var results = document.getElementById("hidden");
+				if (results.style.display === "none") {          
+        		results.style.display = "block";
+    			} 
+    			
+			} 
+		</script>
+	</head>
+	<body>
+		<div id="logo">
+		<img src="./images/logo.png"/>
+		</div>
+		<div>
+		<form name="inventoryForm" onsubmit="return moviesList()">
+		
+			
+			<div id="shown">
+			<div id="resultsbox">
+			
+					<table style="width:100%">
+<thead>
+  <tr>
+    <th>ID#</th>
+    <th>Movie</th>
+    <th>On Hand</th>
+    <th>Update Qty</th>
+    <th></th>
+    <th></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>001</td>
+    <td>Inception</td>
+    <td><input type="text" id="001Qty" name="001Qty" value="15" readonly="" style="width: 30px"/></td>
+    <td><input type="text" id="001Update" name="001Update"/></td>
+    <td><button type="button" id="001updatebutt">Update</button></td>
+    <td><button type="button" id="001deletebutt">Delete</button></td>
+  </tr>
+  <tr>
+    <td>002</td>
+    <td>The New Guy</td>
+    <td><input type="text" id="002Qty" name="002Qty" value="10" readonly="" style="width: 30px"/></td>
+    <td><input type="text" id="002Update" name="002Update"/></td>
+    <td><button type="button" id="001updatebutt">Update</button></td>
+    <td><button type="button" id="001deletebutt">Delete</button></td>
+  </tr>
+  <tr>
+    <td>003</td>
+    <td>Alone</td>
+    <td><input type="text" id="003Qty" name="003Qty" value="8" readonly="" style="width: 30px"/></td>
+    <td><input type="text" id="003Update" name="003Update"/></td>
+    <td><button type="button" id="001updatebutt">Update</button></td>
+    <td><button type="button" id="001deletebutt">Delete</button></td>
+  </tr>
+  <tr>
+    <td>004</td>
+    <td>Rad</td>
+    <td><input type="text" id="004Qty" name="004Qty" value="5" readonly="" style="width: 30px"/></td>
+    <td><input type="text" id="004Update" name="004Update"/></td>
+    <td><button type="button" id="001updatebutt">Update</button></td>
+    <td><button type="button" id="001deletebutt">Delete</button></td>
+  </tr>
+  <tr>
+    <td>005</td>
+    <td>Mission Impossible IV</td>
+    <td><input type="text" id="005Qty" name="005Qty" value="10" readonly="" style="width: 30px"/></td>
+    <td><input type="text" id="005Update" name="005Update"/></td>
+    <td><button type="button" id="001updatebutt">Update</button></td>
+    <td><button type="button" id="001deletebutt">Delete</button></td>
+  </tr>
+  <tr>
+    <td>006</td>
+    <td>Resident Evil</td>
+    <td><input type="text" id="006Qty" name="006Qty" value="5" readonly="" style="width: 30px"/></td>
+    <td><input type="text" id="006Update" name="006Update"/></td>
+    <td><button type="button" id="001updatebutt">Update</button></td>
+    <td><button type="button" id="001deletebutt">Delete</button></td>
+  </tr>
+  <tr>
+    <td>007</td>
+    <td>The Addams Family</td>
+    <td><input type="text" id="007Qty" name="007Qty" value="7" readonly="" style="width: 30px"/></td>
+    <td><input type="text" id="007Update" name="007Update"/></td>
+    <td><button type="button" id="001updatebutt">Update</button></td>
+    <td><button type="button" id="001deletebutt">Delete</button></td>
+  </tr>
+  <tr>
+    <td>008</td>
+    <td>Jumping The Broom</td>
+    <td><input type="text" id="008Qty" name="008Qty" value="3" readonly="" style="width: 30px"/></td>
+    <td><input type="text" id="008Update" name="008Update"/></td>
+    <td><button type="button" id="001updatebutt">Update</button></td>
+    <td><button type="button" id="001deletebutt">Delete</button></td>
+  </tr>
+  <tr>
+    <td>009</td>
+    <td>The Avengers</td>
+    <td><input type="text" id="009Qty" name="009Qty" value="8" readonly="" style="width: 30px"/></td>
+    <td><input type="text" id="009Update" name="009Update"/></td>
+    <td><button type="button" id="001updatebutt">Update</button></td>
+    <td><button type="button" id="001deletebutt">Delete</button></td>
+  </tr>
+  <tr>
+    <td>010</td>
+    <td>Rocketman</td>
+    <td><input type="text" id="010Qty" name="010Qty" value="20" readonly="" style="width: 30px"/></td>
+    <td><input type="text" id="0101Update" name="010Update"/></td>
+    <td><button type="button" id="001updatebutt">Update</button></td>
+    <td><button type="button" id="001deletebutt">Delete</button></td>
+  </tr>
+  <tr>
+    <td>011</td>
+    <td>Megamind</td>
+    <td><input type="text" id="011Qty" name="011Qty" value="11" readonly="" style="width: 30px"/></td>
+    <td><input type="text" id="011Update" name="011Update"/></td>
+    <td><button type="button" id="001updatebutt">Update</button></td>
+    <td><button type="button" id="001deletebutt">Delete</button></td>
+  </tr>
+  <tr>
+    <td>012</td>
+    <td>The Hustle</td>
+    <td><input type="text" id="012Qty" name="012Qty" value="16" readonly="" style="width: 30px"/></td>
+    <td><input type="text" id="012Update" name="012Update"/></td>
+    <td><button type="button" id="001updatebutt">Update</button></td>
+    <td><button type="button" id="001deletebutt">Delete</button></td>
+  </tr>
+  <tr>
+    <td>013</td>
+    <td>Rango</td>
+    <td><input type="text" id="013Qty" name="013Qty" value="10" readonly="" style="width: 30px"/></td>
+    <td><input type="text" id="013Update" name="013Update"/></td>
+    <td><button type="button" id="001updatebutt">Update</button></td>
+    <td><button type="button" id="001deletebutt">Delete</button></td>
+  </tr>
+  <tr>
+    <td>014</td>
+    <td>Footloose</td>
+    <td><input type="text" id="014Qty" name="014Qty" value="5" readonly="" style="width: 30px"/></td>
+    <td><input type="text" id="014Update" name="014Update"/></td>
+    <td><button type="button" id="001updatebutt">Update</button></td>
+    <td><button type="button" id="001deletebutt">Delete</button></td>
+  </tr>
+  <tr>
+    <td><input type="text" id="newMovie" name="newMovieID" placeholder="ID#" style="width: 20px"/></td>
+    <td><input type="text" id="newMovie" name="newMovieName" placeholder="Name" style="width: 200px"/></td>
+    <td><input type="text" id="NewMovie" name="NewMovieQty" placeholder="Qty" style="width: 30px"/></td>
+    <td><button type="button" id="newMovie">Add Movie</button></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+			
+			</div>
+			</div>
+			
+			
+		</form>
+		
+		</div>
+		
+		<div>
+		<nav>
+			<a href="index.html" target="_self"><button type="button">Home Screen</button></a>
+		</nav>
+	</div>	
+		
+	</body>
+</html>
