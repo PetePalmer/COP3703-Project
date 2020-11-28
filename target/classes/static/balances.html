@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>UNFMovies | Search Movies</title>
+		<link href="./css/main.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="./js/script.js"></script>
+		
+	</head>
+	<body>
+		<div id="logo">
+		<img src="./images/logo.png"/>
+		</div>
+		<div>
+		<form name="balanceForm" onsubmit="return moviesList()">
+		
+			
+			<div id="shown">
+			<div id="revreport">
+			<label for="balancereport">User</label>
+			<select name="balancereport" id="balancereport">
+  			<option value="nick">Nick</option>
+ 			<option value="charles">Charles</option>
+ 			<option value="daniel">Daniel</option>
+ 			<option value="matthew">Matthew</option>
+ 			<option value="peter">Peter</option>
+ 			<input type="search" id="balsearch" name="balsearch" placeholder="Search for user..">
+ 			<button type="submit" id="balancesearch">Generate</button>
+ 			
+			</select>
+			</div>
+			<div id="resultsbox">
+			<textarea name="balanceOutput" rows="25" cols="101" readonly=""></textarea>
+			
+			</div>
+			</div>
+			<br />
+			<div>
+				<button type="button" id="addlatefee">Add Late Fee</button>
+			</div>
+			
+		</form>
+		
+		</div>
+		<div id="bgbox">
+			
+			</div>
+	<div>
+		<nav>
+			<a href="index.html" target="_self"><button type="button">Home Screen</button></a>
+		</nav>
+	</div>	
+		
+	</body>
+</html>
